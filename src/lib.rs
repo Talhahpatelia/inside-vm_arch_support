@@ -27,7 +27,16 @@
 //!
 //!https://evasions.checkpoint.com/techniques/timing.html#difference-vm-hosts
 
+#[cfg(target_arch = "x86")]
+use std::arch::x86::{CpuidResult, __cpuid, _rdtsc};
+#[cfg(target_arch = "x86_64")]
 use std::arch::x86_64::{CpuidResult, __cpuid, _rdtsc};
+
+// Arm not working
+// #[cfg(target_arch = "aarch64")]
+// use std::arch::aarch64::{CpuidResult, __cpuid, _rdtsc};
+
+// use std::arch::x86_64::{CpuidResult, __cpuid, _rdtsc};
 
 /// Compute cpuid cpu cycles average.
 ///
