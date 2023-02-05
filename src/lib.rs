@@ -11,7 +11,7 @@
 //! ## Quick Start
 //!
 //! ```
-//! use inside_vm::{inside_vm, inside_vm_custom, cpuid_cycle_count_avg};
+//! use inside_vm_arch_support::{inside_vm, inside_vm_custom, cpuid_cycle_count_avg};
 //!
 //! let inside = inside_vm();
 //! println!("inside vm: {}", inside);
@@ -49,7 +49,7 @@ use std::arch::x86_64::{CpuidResult, __cpuid, _rdtsc};
 /// This function uses `unsafe`.
 ///
 /// ```
-/// use inside_vm::cpuid_cycle_count_avg;
+/// use inside_vm_arch_support::cpuid_cycle_count_avg;
 /// // perform 5 + 100 + 10 = 115 measurements
 /// // discard 5 lowest and 10 highest measurements
 /// // compute average over the 100 remaining measurements
@@ -98,8 +98,8 @@ pub fn cpuid_cycle_count_avg(low: usize, samples: usize, high: usize) -> u64 {
 ///
 /// Example
 /// ```
-/// use inside_vm::inside_vm_custom;
-/// let inside: bool = inside_vm::inside_vm_custom(5, 100, 5, 1_000);
+/// use inside_vm_arch_support::inside_vm_custom;
+/// let inside: bool = inside_vm_arch_support::inside_vm_custom(5, 100, 5, 1_000);
 /// ```
 pub fn inside_vm_custom(low: usize, samples: usize, high: usize, threshold: u64) -> bool {
     cpuid_cycle_count_avg(low, samples, high) > threshold
@@ -111,8 +111,8 @@ pub fn inside_vm_custom(low: usize, samples: usize, high: usize, threshold: u64)
 ///
 /// Example:
 /// ```
-/// use inside_vm::inside_vm;
-/// let inside: bool = inside_vm::inside_vm();
+/// use inside_vm_arch_support::inside_vm;
+/// let inside: bool = inside_vm_arch_support::inside_vm();
 /// ```
 pub fn inside_vm() -> bool {
     inside_vm_custom(5, 100, 5, 1_000)

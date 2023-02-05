@@ -1,11 +1,11 @@
-<!-- [![rtw crate](https://img.shields.io/crates/v/inside-vm.svg)](https://crates.io/crates/inside-vm)
-[![rtw documentation](https://docs.rs/inside-vm/badge.svg)](https://docs.rs/inside-vm) -->
+[![rtw crate](https://img.shields.io/crates/v/inside-vm.svg)](https://crates.io/crates/inside-vm_arch_support)
 
 # inside-vm
 
 Detect if code is running inside a virtual machine.
 
-> Only works on x86 and x86-64.
+> works on x86 and x86-64.
+> aarch64 support coming later
 
 ## How does it work
 
@@ -14,8 +14,8 @@ Measure average cpu cycles when calling [`cpuid`](https://en.wikipedia.org/wiki/
 ## Quick Start
 
 ```
-git clone https://github.com/PicoJr/inside-vm
-cd inside-vm/
+git clone https://github.com/Talhahpatelia/inside-vm_arch_support
+cd inside-vm_arch_support/
 cargo run --example test-inside-vm
 ```
 
