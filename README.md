@@ -1,5 +1,5 @@
-[![rtw crate](https://img.shields.io/crates/v/inside-vm.svg)](https://crates.io/crates/inside-vm)
-[![rtw documentation](https://docs.rs/inside-vm/badge.svg)](https://docs.rs/inside-vm)
+<!-- [![rtw crate](https://img.shields.io/crates/v/inside-vm.svg)](https://crates.io/crates/inside-vm)
+[![rtw documentation](https://docs.rs/inside-vm/badge.svg)](https://docs.rs/inside-vm) -->
 
 # inside-vm
 

@@ -1,9 +1,9 @@
 [package]
 name = "inside-vm_arch_support"
 version = "0.2.0"
-authors = ["PicoJr <picojr_dev@gmx.com>"]
-edition = "2018"
-repository = "https://github.com/PicoJr/inside-vm"
+authors = ["PicoJr <picojr_dev@gmx.com>", "Talhah Patelia <talhah1911@gmail.com>"]
+edition = "2015"
+repository = "https://github.com/Talhahpatelia/inside-vm_arch_support"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 keywords = ["vm", "detect", "timing"]
