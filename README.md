@@ -32,7 +32,7 @@ output: `avg cycles for __cpuid: 30578`
 ## API
 
 ``` rust
-use inside_vm::inside_vm;
+use inside_vm_arch_support::inside_vm;
 
 let inside = inside_vm();
 println!("inside vm: {}", inside);
