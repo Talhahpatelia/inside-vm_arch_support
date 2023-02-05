@@ -1,5 +1,5 @@
 [package]
-name = "inside-vm"
+name = "inside-vm_arch_support"
 version = "0.2.0"
 authors = ["PicoJr <picojr_dev@gmx.com>"]
 edition = "2018"
