@@ -1,4 +1,4 @@
-[![rtw crate](https://img.shields.io/crates/v/inside-vm.svg)](https://crates.io/crates/inside-vm_arch_support)
+[![rtw crate](https://img.shields.io/crates/v/inside-vm_arch_support.svg)](https://crates.io/crates/inside-vm_arch_support)
 
 # inside-vm
 
