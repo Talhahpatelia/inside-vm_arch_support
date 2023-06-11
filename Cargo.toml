@@ -1,6 +1,6 @@
 [package]
 name = "inside-vm_arch_support"
-version = "0.3.1"
+version = "0.3.2"
 authors = ["PicoJr <picojr_dev@gmx.com>", "Talhah Patelia <talhah1911@gmail.com>"]
 edition = "2015"
 repository = "https://github.com/Talhahpatelia/inside-vm_arch_support"
